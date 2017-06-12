@@ -6,7 +6,7 @@ end
 
 
 #puts ARGV[0]
-stdin, stdout, stderr, wait_thr = Open3.popen3("find $ANDROID_HOME  -regex '.*/2[0-9].*/aapt'")
+stdin, stdout, stderr, wait_thr = Open3.popen3("find $ANDROID_HOME  -regex '.*/25.*/aapt'")
 aapts = stdout.gets(nil)
 aapt = aapts.lines.last.chomp
 stdout.close
