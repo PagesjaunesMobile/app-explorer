@@ -12,6 +12,7 @@ aapt = aapts.lines.last.chomp
 stdout.close
 stderr.close
 cmd = "#{aapt} dump badging #{ARGV[0]}"
+puts cmd
 stdin, stdout, stderr, wait_thr = Open3.popen3(cmd)
 result = stdout.gets(nil)
 stdout.close
