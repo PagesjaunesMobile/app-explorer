@@ -11,4 +11,4 @@ pwd
 ls -l  $BITRISE_APK_PATH
 ls -l $this_script_dir/step.rb
 #bundle install
-bundle exec ruby "$this_script_dir/step.rb" "$BITRISE_APK_PATH"
+ruby "$this_script_dir/step.rb" "$BITRISE_APK_PATH"
